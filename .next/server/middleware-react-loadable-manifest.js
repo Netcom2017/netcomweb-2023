@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"home.js -> ../src/components/Isotope/PreMadeTemplateIsotope":{"id":"home.js -> ../src/components/Isotope/PreMadeTemplateIsotope","files":["static/chunks/src_components_Isotope_PreMadeTemplateIsotope_js.js"]}}

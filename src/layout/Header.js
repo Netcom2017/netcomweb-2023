@@ -23,7 +23,7 @@ const Header1 = () => {
           <div className="header-inner rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
-                <Link href="/">
+                <Link href="/home">
                   <a>
                     <img
                       src="assets/images/logos/logo-two.png"
@@ -40,7 +40,7 @@ const Header1 = () => {
               <nav className="main-menu d-none d-lg-block navbar-expand-lg">
                 <div className="navbar-header">
                   <div className="mobile-logo my-15">
-                    <Link href="/">
+                    <Link href="/home">
                       <a>
                         <img
                           src="assets/images/logos/logo-two.png"
@@ -166,6 +166,7 @@ const Header2 = () => {
                   <a>
                     <img
                       src="assets/images/logos/logo.png"
+                      width="100%"
                       alt="Logo"
                       title="Logo"
                       className="logo dark-logo"
@@ -190,6 +191,7 @@ const Header2 = () => {
                       <a>
                         <img
                           src="assets/images/logos/logo.png"
+                          width="100%"
                           alt="Logo"
                           title="Logo"
                         />
@@ -264,10 +266,11 @@ const DefaultHeader = () => {
           <div className="header-inner rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
-                <Link href="/">
+                <Link href="/home">
                   <a>
                     <img
                       src="assets/images/logos/logo.png"
+                      width="100%"
                       alt="Logo"
                       title="Logo"
                     />
@@ -281,10 +284,11 @@ const DefaultHeader = () => {
               <nav className="main-menu d-none d-lg-block navbar-expand-lg">
                 <div className="navbar-header">
                   <div className="mobile-logo my-15">
-                    <Link href="/">
+                    <Link href="/home">
                       <a>
                         <img
                           src="assets/images/logos/logo.png"
+                          width="100%"
                           alt="Logo"
                           title="Logo"
                         />
@@ -312,11 +316,8 @@ const DefaultHeader = () => {
             {/* Menu Button */}
             <div className="menu-btns">
               <Link href="/contact">
-                <a className="login">Log in</a>
-              </Link>
-              <Link href="/contact">
                 <a className="theme-btn">
-                  Sign up Free <i className="fas fa-angle-double-right" />
+                  Contact Us <i className="fas fa-angle-double-right" />
                 </a>
               </Link>
             </div>
@@ -331,164 +332,60 @@ const DefaultHeader = () => {
 const Menu = () => {
   return (
     <ul className="navigation clearfix">
+      <li>
+        <Link href="/home">Home</Link>
+      </li>
+      <li>
+        <Link href="/about">About us</Link>
+      </li>
       <li className="dropdown">
-        <a href="#">Home</a>
+        <a href="#">Our Services</a>
         <ul>
-          <li className="dropdown">
-            <a href="#">MultiPage</a>
-            <ul>
-              <li>
-                <Link href="/">Web Design</Link>
-              </li>
-              <li>
-                <Link href="/index1dark">Web Design Dark</Link>
-              </li>
-              <li>
-                <Link href="/index2">Front End Services</Link>
-              </li>
-              <li>
-                <Link href="/index2dark">Front End Dark</Link>
-              </li>
-              <li>
-                <Link href="/index3">Website Builder</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
-          <li className="dropdown">
-            <a href="#">OnePage</a>
-            <ul>
-              <li>
-                <Link href="/index1-onepage">Web Design</Link>
-              </li>
-              <li>
-                <Link href="/index1dark-onepage">Web Design Dark</Link>
-              </li>
-              <li>
-                <Link href="/index2-onepage">Front End Services</Link>
-              </li>
-              <li>
-                <Link href="/index2dark-onepage">Front End Dark</Link>
-              </li>
-              <li>
-                <Link href="/index3-onepage">Website Builder</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
+          <li>
+            <Link href="/team">Website Development</Link>
+            </li>
+            <li>
+              <Link href="/team-profile">E-Commerce Solutions</Link>
+            </li>
+            <li>
+              <Link href="/team-profile">Applications Development</Link>
+            </li>
+            <li>
+              <Link href="/team-profile">Digital Marketing</Link>
+            </li>
+            <li>
+              <Link href="/team-profile">UI/UX Designing</Link>
+            </li>
         </ul>
         <div className="dropdown-btn">
           <span className="fas fa-chevron-down" />
         </div>
       </li>
       <li className="dropdown">
-        <a href="#">services</a>
+        <a href="#">Our Solutions</a>
         <ul>
           <li>
-            <Link href="/services">Popular Services</Link>
+            <Link href="/projects">Industry Solutions</Link>
           </li>
           <li>
-            <Link href="/service-details">service details</Link>
+            <Link href="/project-creative">Integrated Solutions</Link>
+          </li>
+          <li>
+            <Link href="/project-carousel">CRM Solutions</Link>
+          </li>
+          <li>
+            <Link href="/project-details">SaaS Solutions</Link>
+          </li>
+          <li>
+            <Link href="/project-details">Software Solutions</Link>
           </li>
         </ul>
         <div className="dropdown-btn">
           <span className="fas fa-chevron-down" />
         </div>
       </li>
-      <li className="dropdown">
-        <a href="#">Project</a>
-        <ul>
-          <li>
-            <Link href="/projects">Project Grid</Link>
-          </li>
-          <li>
-            <Link href="/project-creative">Project Creative</Link>
-          </li>
-          <li>
-            <Link href="/project-carousel">Project Carousel</Link>
-          </li>
-          <li>
-            <Link href="/project-details">Project Details</Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="fas fa-chevron-down" />
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="#">pages</a>
-        <ul>
-          <li>
-            <Link href="/about">About us</Link>
-          </li>
-          <li className="dropdown">
-            <a href="#">Team</a>
-            <ul>
-              <li>
-                <Link href="/team">Expert Team</Link>
-              </li>
-              <li>
-                <Link href="/team-profile">Team Profile</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
-          <li>
-            <Link href="/pricing">pricing plan</Link>
-          </li>
-          <li>
-            <Link href="/faqs">faqs &amp; helf</Link>
-          </li>
-          <li>
-            <Link href="/404">404 error</Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="fas fa-chevron-down" />
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="#">shop</a>
-        <ul>
-          <li>
-            <Link href="/shop">shop Grid</Link>
-          </li>
-          <li>
-            <Link href="/product-details">Product details</Link>
-          </li>
-          <li>
-            <Link href="/cart">cart page</Link>
-          </li>
-          <li>
-            <Link href="/checkout">checkout</Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="fas fa-chevron-down" />
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="#">blog</a>
-        <ul>
-          <li>
-            <Link href="/blog">blog Grid</Link>
-          </li>
-          <li>
-            <Link href="/blog-list">blog list</Link>
-          </li>
-          <li>
-            <Link href="/blog-details">blog details</Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="fas fa-chevron-down" />
-        </div>
+      <li>
+        <Link href="/contact">Careers</Link>
       </li>
       <li>
         <Link href="/contact">Contact</Link>
